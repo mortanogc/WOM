@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Museum of the World Ocean</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title">Amber Museum</string>
+    <string name="nav_header_subtitle">Mon-Fri 10:00-19:00 Sat-Sun 9:00-20:00</string>
+    <string name="nav_header_desc">Main menu</string>
+    <string name="action_settings">Settings</string>
+
+    <!--   review-->
+    <string-array name="ratings">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="average_rating">Rating</string>
+    <string name="add_review">Add review</string>
+
+    <!-- INFO -->
+    <string name="museum_info">Museum information</string>
+
+    <string name="museum_about">
+    The only Amber Museum in Russia was opened in 1979. It is located in the center of Kaliningrad on the shore of Lake Verkhneye in a mid-19th century fortress tower.\n\n
+    The tower was built in 1853 under the supervision of Ernst Ludwig von Aster, chief of the engineering corps and developer of the overall plan for the fortifications of Königsberg. It was part of the citys defensive fortifications and was named after the Prussian Field Marshal Friedrich Karl Dohna, a participant in the War of Liberation against Napoleonic invasion. The building is also a monument of World War II.\n
+    The Amber Museum is a museum dedicated to a single mineral. The exhibition is located on three floors of the building, with a total area of about 1000 sq. meters. It is divided into natural-scientific and cultural-historical sections.\n
+    Amber is fossilized resin from ancient coniferous trees that grew more than 40 million years ago in the area of present-day Scandinavia and adjacent areas of the Baltic Sea bed.\n
+    The natural-scientific section of the collection features amber samples of various weights, colors, and degrees of transparency. The exhibition includes the largest "sunstone" in Russia, weighing 4 kg 280 g. A significant part of the collection consists of amber samples with inclusions of animal and plant remains that were trapped in the once liquid and sticky resin tens of millions of years ago. Inclusions in Baltic amber are of great scientific interest due to their diversity and excellent preservation. They are valuable for refining our knowledge of the flora and fauna, as well as the climatic conditions on Earth 40-45 million years ago. Today, the collection of the Kaliningrad Amber Museum is the main Russian national fund of inclusions in Baltic amber.
+</string>
+
+    <string name="museum_address">Museum address: 236016, Kaliningrad, Marshal Vasilevsky Square, 1.</string>
+
+    <string name="museum_working_hours">Working hours: Mon-Fri 10:00-19:00 Sat-Sun 9:00-20:00</string>
+
+    <string name="privacy">© 2005 — 2023 STATE BUDGETARY INSTITUTION OF CULTURE "KALININGRAD REGIONAL AMBER MUSEUM". All rights reserved.</string>
+
+    <string name="museum_contact_info">Contacts:\n
+            tel./fax +7 (4012) 466-550, e-mail: office@ambermuseum.ru – reception;\n
+            tel./fax +7 (4012) 466-888, e-mail: info@ambermuseum.ru – information department;\n
+            tel./fax +7 (4012) 538-219, e-mail: visitor@ambermuseum.ru – tour booking.</string>
+
+    <string name="app_info">Application and author information</string>
+
+    <string name="app_description1">TMuseum AR is an application that will help you learn more about the exhibits, news, and events of the museum using augmented reality.</string>
+
+    <string name="about_author">About the author: Sergey Mortano/Shchukin, just a strange student</string>
+
+    <string name="contact_info">Contacts: mortanogc@gmail.com</string>
+
+    <string name="app_version">Version: 1.1.2</string>
+
+    <!--permission-->
+    <string name="permissions_not_granted">Not all permissions granted</string>
+
+    <string name="hello_blank_fragment">Hello in the blank fragment, how did you get here?</string>
+
+    <!-- ... -->
+    <string name="welcome">Welcome to Museum AR!</string>
+    <string name="app_description">Museum AR is an application that will help you learn more about the exhibits, news, and events of the museum using augmented reality. Travel through the museum, discover new exhibits, and share your reviews!\n</string>
+    <string name="app_description_2">This application was specially created for a coursework and is part of a larger project</string>
+    <!--   reviews     -->
+    <string name="fullscreen_image_content_description">Fullscreen image</string>
+</resources>
