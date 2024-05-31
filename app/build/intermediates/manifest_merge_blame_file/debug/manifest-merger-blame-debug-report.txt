@@ -1,0 +1,208 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.womkk"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+12-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:7:5-8:40
+12-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:7:22-79
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:9:5-65
+13-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:9:22-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:10:5-80
+14-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:10:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:11:5-12:40
+15-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:11:22-78
+16
+17    <uses-feature
+17-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:15:5-87
+18        android:name="android.hardware.camera.ar"
+18-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:15:19-60
+19        android:required="true" />
+19-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:15:61-84
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+22        android:name="com.womkk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.womkk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+26
+27    <queries>
+27-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:29:5-31:15
+28        <package android:name="com.google.ar.core" />
+28-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:30:9-54
+28-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:30:18-51
+29    </queries>
+30
+31    <application
+31-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:17:5-43:19
+32        android:allowBackup="true"
+32-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:18:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-3\877624e4621841fe76fbac01ac6285a8\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher_1"
+36-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:19:9-45
+37        android:label="@string/app_name"
+37-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:20:9-41
+38        android:requestLegacyExternalStorage="true"
+38-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:23:9-52
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:21:9-54
+40        android:supportsRtl="true"
+40-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:22:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.MuseumAR.NoActionBar" >
+42-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:24:9-58
+43        <activity
+43-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:25:9-34:20
+44            android:name="com.womkk.ui.MainActivity"
+44-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:26:13-44
+45            android:exported="true"
+45-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:27:13-36
+46            android:label="MuseumAR" >
+46-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:28:13-37
+47            <intent-filter>
+47-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:29:13-33:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:30:17-69
+48-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:30:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:32:17-77
+50-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:32:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:36:9-38:54
+54            android:name="com.womkk.ui.ar.ARActivity"
+54-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:37:13-45
+55            android:screenOrientation="fullSensor" />
+55-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:38:13-51
+56
+57        <meta-data
+57-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:40:9-42:40
+58            android:name="com.google.ar.core"
+58-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:41:13-46
+59            android:value="optional" />
+59-->C:\diplom\worldoceanmuseum\app\src\main\AndroidManifest.xml:42:13-37
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.womkk.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\serez\.gradle\caches\transforms-3\f541d7661abefc76afaa3e3576544bc1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\serez\.gradle\caches\transforms-3\d7161e544cf3699e03473ccaa0c4c2ea\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\serez\.gradle\caches\transforms-3\d7161e544cf3699e03473ccaa0c4c2ea\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\serez\.gradle\caches\transforms-3\d7161e544cf3699e03473ccaa0c4c2ea\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <uses-library
+76-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+77            android:name="androidx.window.extensions"
+77-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+79        <uses-library
+79-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+80            android:name="androidx.window.sidecar"
+80-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+81            android:required="false" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+81-->[androidx.window:window:1.0.0] C:\Users\serez\.gradle\caches\transforms-3\9b895b3795751bb1a9a7a7ce3790b8b1\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+82        <meta-data
+82-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:36:9-38:41
+83            android:name="com.google.ar.core.min_apk_version"
+83-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:37:13-62
+84            android:value="220920000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+84-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:38:13-38
+85        <activity
+85-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:40:9-46:80
+86            android:name="com.google.ar.core.InstallActivity"
+86-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:41:13-62
+87            android:configChanges="keyboardHidden|orientation|screenSize"
+87-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:42:13-74
+88            android:excludeFromRecents="true"
+88-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:43:13-46
+89            android:exported="false"
+89-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:44:13-37
+90            android:launchMode="singleTop"
+90-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:45:13-43
+91            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+91-->[com.google.ar:core:1.31.0] C:\Users\serez\.gradle\caches\transforms-3\1f3b29501928ba4eeec0581a7d1ae259\transformed\jetified-core-1.31.0\AndroidManifest.xml:46:13-77
+92
+93        <receiver
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+94            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+95            android:directBootAware="false"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+96            android:enabled="true"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+97            android:exported="true"
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+98            android:permission="android.permission.DUMP" >
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+100                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+103                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+104            </intent-filter>
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+106                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+109                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\serez\.gradle\caches\transforms-3\109a8029c0ed729569f81bf9e8d959df\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+110            </intent-filter>
+111        </receiver>
+112    </application>
+113
+114</manifest>
