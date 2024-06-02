@@ -2,18 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:title="Начало" />
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="@string/nav_account" />
         <item
-            android:id="@+id/nav_map"
-            android:title="Карта музея" />
+            android:id="@+id/nav_reviews"
+            android:icon="@drawable/message_draw"
+            android:title="@string/nav_reviews" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings" />
         <item
             android:id="@+id/nav_about_museum"
-            android:title="О музее" />
+            android:icon="@drawable/ic_info"
+            android:title="@string/nav_about_museum" />
         <item
             android:id="@+id/nav_about_app"
-            android:title="О приложении" />
+            android:icon="@drawable/ic_info"
+            android:title="@string/nav_about_app" />
     </group>
 </menu>
-
-

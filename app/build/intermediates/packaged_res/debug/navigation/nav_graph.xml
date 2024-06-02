@@ -6,53 +6,33 @@
     app:startDestination="@+id/nav_news">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.womkk.ui.home.HomeFragment"
-        android:label="Начало"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
         android:id="@+id/nav_news"
         android:name="com.womkk.ui.news.NewsListFragment"
-        android:label="Новости Музея"
+        android:label="@string/nav_news"
         tools:layout="@layout/fragment_news_list" />
 
     <fragment
         android:id="@+id/nav_map"
         android:name="com.womkk.ui.map.MuseumMapFragment"
-        android:label="Карта Музейного Комплекса"
+        android:label="@string/nav_map"
         tools:layout="@layout/fragment_museum_map" />
-
-    <fragment
-        android:id="@+id/nav_ar"
-        android:name="com.womkk.ui.ar.ARListFragment"
-        android:label="menu_ar"
-        tools:layout="@layout/fragment_ar_list" >
-    <action
-        android:id="@+id/action_arListFragment_to_exhibitDetailsFragment"
-        app:destination="@+id/exhibitDetailsFragment">
-        <argument
-            android:name="exhibitId"
-            app:argType="string" />
-    </action>
-    </fragment>
 
     <fragment
         android:id="@+id/nav_about_museum"
         android:name="com.womkk.ui.about.MuseumInfoFragment"
-        android:label="О Нашем Музее"
+        android:label="@string/nav_about_museum"
         tools:layout="@layout/fragment_museum_info" />
 
     <fragment
         android:id="@+id/nav_about_app"
         android:name="com.womkk.ui.about.AppInfoFragment"
-        android:label="О Приложении"
+        android:label="@string/nav_about_app"
         tools:layout="@layout/fragment_app_info" />
 
     <fragment
         android:id="@+id/nav_exhibits"
         android:name="com.womkk.ui.exhibits.ExhibitsListFragment"
-        android:label="Список Экспонатов Музея"
+        android:label="@string/nav_exhibits"
         tools:layout="@layout/fragment_exhibit_list">
         <action
             android:id="@+id/action_exhibitsListFragment_to_exhibitDetailsFragment"
@@ -66,7 +46,7 @@
     <fragment
         android:id="@+id/exhibitDetailsFragment"
         android:name="com.womkk.ui.exhibits.ExhibitDetailsFragment"
-        android:label="Об Экспонате"
+        android:label="@string/exhibit_details"
         tools:layout="@layout/fragment_exhibit_details">
         <argument
             android:name="exhibitId"
@@ -85,7 +65,7 @@
     <fragment
         android:id="@+id/reviewListFragment"
         android:name="com.womkk.ui.reviews.ReviewListFragment"
-        android:label="ReviewListFragment">
+        android:label="@string/nav_reviews">
         <action
             android:id="@+id/action_reviewListFragment_to_addReviewFragment"
             app:destination="@id/addReviewFragment" />
@@ -99,4 +79,22 @@
             android:name="imageUrl"
             app:argType="string" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.womkk.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.womkk.ui.account.AccountFragment"
+        android:label="@string/nav_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_tickets"
+        android:name="com.womkk.ui.tickets.TicketsFragment"
+        android:label="@string/nav_tickets"
+        tools:layout="@layout/fragment_tickets" />
 </navigation>

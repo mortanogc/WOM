@@ -77,4 +77,39 @@
         <string name="app_description_2">Данное приложение было создано специально для курсовой работы и является частью крупного проекта</string>
 <!--   отзывы     -->
     <string name="fullscreen_image_content_description">Полноэкранное изображение</string>
+
+
+<!--    Settings    -->
+    <string name="nav_home">Начало</string>
+    <string name="nav_news">Новости</string>
+    <string name="nav_tickets">Билеты</string>
+    <string name="nav_map">Карта музея</string>
+    <string name="nav_about_museum">О музее</string>
+    <string name="nav_account">Аккаунт</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_about_app">О приложении</string>
+
+    <string name="select_language">Выбор языка</string>
+    <string name="select_theme">Выбор темы</string>
+    <string name="save_settings">Сохранить настройки</string>
+    <string name="request_permissions">Перезапрос разрешений</string>
+    <string name="settings_applied">Новые параметры применены</string>
+    <string name="settings_saved">Положение сохранено</string>
+    <string name="permissions_granted">Все разрешения уже выданы</string>
+    <string name="cache_size">Размер кеша:</string>
+    <string name="clear_cache">Очистить кеш</string>
+    <string-array name="language_options">
+        <item>По умолчанию системы</item>
+        <item>Английский</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="theme_options">
+        <item>По умолчанию системы</item>
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array>
+    <string name="nav_reviews">Отзывы</string>
+    <string name="nav_menu">Меню</string>
+    <string name="nav_exhibits">Экспонаты</string>
+    <string name="exhibit_details">Детали экспоната</string>
 </resources>

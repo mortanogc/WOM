@@ -47,17 +47,17 @@ public class ARListFragment extends Fragment {
             }
         });
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ExhibitsAdapter adapter = (ExhibitsAdapter) parent.getAdapter();
-                Exhibit selectedExhibit = adapter.getExhibitByPosition(position);
-
-                Bundle bundle = new Bundle();
-                bundle.putString("exhibitId", selectedExhibit.getId());
-                Navigation.findNavController(view).navigate(R.id.action_arListFragment_to_exhibitDetailsFragment, bundle);
-            }
-        });
+//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                ExhibitsAdapter adapter = (ExhibitsAdapter) parent.getAdapter();
+//                Exhibit selectedExhibit = adapter.getExhibitByPosition(position);
+//
+//                Bundle bundle = new Bundle();
+//                bundle.putString("exhibitId", selectedExhibit.getId());
+//                Navigation.findNavController(view).navigate(R.id.action_arListFragment_to_exhibitDetailsFragment, bundle);
+//            }
+//        });
 
         return view;
     }
