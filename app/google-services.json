@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "810187501130",
+    "firebase_url": "https://world-ocean-museum-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "world-ocean-museum",
+    "storage_bucket": "world-ocean-museum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810187501130:android:750ea1f1aa5754cc4280b3",
+        "android_client_info": {
+          "package_name": "com.womkk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcLYDhCXLb0bHnkssussr0fNDmyS42Pbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

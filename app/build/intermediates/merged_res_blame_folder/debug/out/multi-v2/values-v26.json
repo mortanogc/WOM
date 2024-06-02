@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-55:/values-v26/values-v26.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-v26/values-v26.xml",
             "map": [
                 {
                     "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\2c87bb461b3471d5063db87d0c724e44\\transformed\\appcompat-1.6.1\\res\\values-v26\\values-v26.xml",

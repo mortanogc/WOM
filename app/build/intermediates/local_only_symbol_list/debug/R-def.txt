@@ -41,6 +41,7 @@ drawable ic_map
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_slideshow
+drawable ic_navigation
 drawable ic_settings
 drawable ic_tickets
 drawable icon_museum
@@ -52,9 +53,11 @@ drawable newspaper
 drawable original
 drawable pantheon
 drawable placeholder_image
+drawable round_button
 drawable round_outline
 drawable rounded_button
 drawable side_nav_bar
+drawable user_arrow
 id about_author
 id action_addReviewFragment_to_reviewListFragment
 id action_exhibitsListFragment_to_exhibitDetailsFragment
@@ -71,6 +74,7 @@ id ar_exhibit_grid
 id ar_fragment
 id bottom_nav_view
 id button_choose_photo
+id button_location
 id button_submit_review
 id cache_size_text
 id clear_cache_button
@@ -93,7 +97,7 @@ id image_container
 id images_container
 id iv_star
 id language_spinner
-id mapImageView
+id mapview
 id mobile_navigation
 id museum_about
 id museum_address
@@ -132,7 +136,9 @@ id review_star
 id review_text
 id review_title
 id rv_reviews
-id save_settings_button
+id save_language_button
+id save_theme_button
+id settings_title
 id textView
 id text_view_your_name
 id text_view_your_rating
@@ -188,6 +194,8 @@ string contact_info
 string exhibit_details
 string fullscreen_image_content_description
 string hello_blank_fragment
+string location_not_available
+string location_permission_denied
 string museum_about
 string museum_address
 string museum_contact_info

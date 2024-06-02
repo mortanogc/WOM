@@ -1,94 +1,98 @@
 [
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_ar_list.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_ar_list.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\item_exhibit.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\item_exhibit.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\app_bar_main.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_ar_list.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_ar_list.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_review_list.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_review_list.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_app_info.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_app_info.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_account.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_museum_info.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_museum_info.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_fullscreen_image.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_fullscreen_image.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_add_review.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_add_review.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\item_review.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\item_review.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_museum_map.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_museum_map.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_exhibit_details.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_exhibit_details.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\item_news.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\item_news.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_news_list.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_news_list.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_ar_view.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_ar_view.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\content_main.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\item_exhibit.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\item_exhibit.xml"
+        "merged": "com.womkk.app-mergeDebugResources-64:/layout/fragment_settings.xml",
+        "source": "com.womkk.app-main-67:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_fullscreen_image.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_fullscreen_image.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_ar_view.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_ar_view.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\content_main.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\content_main.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_museum_info.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_museum_info.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_news_list.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_news_list.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\item_review.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\item_review.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_exhibit_list.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_exhibit_list.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_exhibit_list.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_exhibit_list.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_tickets.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_tickets.xml"
     },
     {
-        "merged": "com.womkk.app-mergeDebugResources-56:/layout/fragment_tickets.xml",
-        "source": "com.womkk.app-main-59:/layout/fragment_tickets.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\activity_ar.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\activity_ar.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\activity_ar.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\activity_ar.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_add_review.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_add_review.xml"
     },
     {
-        "merged": "com.womkk.app-mergeDebugResources-56:/layout/fragment_account.xml",
-        "source": "com.womkk.app-main-59:/layout/fragment_account.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_settings.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_app_info.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_app_info.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\fragment_review_list.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\fragment_review_list.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\item_news.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\item_news.xml"
     },
     {
-        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-56:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-59:\\layout\\nav_header_main.xml"
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_museum_map.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_museum_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-mergeDebugResources-64:\\layout\\fragment_exhibit_details.xml",
+        "source": "C:\\Users\\serez\\.gradle\\daemon\\7.4\\com.womkk.app-main-67:\\layout\\fragment_exhibit_details.xml"
     }
 ]

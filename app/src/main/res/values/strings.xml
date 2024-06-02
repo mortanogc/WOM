@@ -100,4 +100,8 @@
     <string name="nav_menu">Menu</string>
     <string name="nav_exhibits">Exhibits</string>
     <string name="exhibit_details">Exhibit Details</string>
+
+    <!--    Maps  -->
+    <string name="location_not_available">Location not available</string>
+    <string name="location_permission_denied">Location permission denied</string>
 </resources>

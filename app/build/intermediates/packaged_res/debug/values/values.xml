@@ -55,6 +55,8 @@
     <string name="exhibit_details">Exhibit Details</string>
     <string name="fullscreen_image_content_description">Fullscreen image</string>
     <string name="hello_blank_fragment">Hello in the blank fragment, how did you get here?</string>
+    <string name="location_not_available">Location not available</string>
+    <string name="location_permission_denied">Location permission denied</string>
     <string name="museum_about">
     The only Amber Museum in Russia was opened in 1979. It is located in the center of Kaliningrad on the shore of Lake Verkhneye in a mid-19th century fortress tower.\n\n
     The tower was built in 1853 under the supervision of Ernst Ludwig von Aster, chief of the engineering corps and developer of the overall plan for the fortifications of Königsberg. It was part of the citys defensive fortifications and was named after the Prussian Field Marshal Friedrich Karl Dohna, a participant in the War of Liberation against Napoleonic invasion. The building is also a monument of World War II.\n

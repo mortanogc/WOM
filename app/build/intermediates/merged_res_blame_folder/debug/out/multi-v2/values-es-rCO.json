@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-55:/values-es-rCO/values-es-rCO.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-es-rCO/values-es-rCO.xml",
             "map": [
                 {
                     "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\1f3b29501928ba4eeec0581a7d1ae259\\transformed\\jetified-core-1.31.0\\res\\values-es-rCO\\values.xml",

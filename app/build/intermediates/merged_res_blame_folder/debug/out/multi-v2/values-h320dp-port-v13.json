@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-55:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\6923e3c3b4b4a3eae650347f5db0b657\\transformed\\material-1.9.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",

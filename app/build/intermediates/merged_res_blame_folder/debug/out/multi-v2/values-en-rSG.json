@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-55:/values-en-rSG/values-en-rSG.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
                     "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\1f3b29501928ba4eeec0581a7d1ae259\\transformed\\jetified-core-1.31.0\\res\\values-en-rSG\\values.xml",

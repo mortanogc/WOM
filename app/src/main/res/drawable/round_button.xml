@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/green_primary_bottom" /> <!-- цвет кнопки -->
+    <corners android:radius="1000dp" /> <!-- радиус углов для создания круга -->
+    <elevation android:elevation="0dp" /> <!-- тень для кнопки -->
+</shape>
