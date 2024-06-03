@@ -3,17 +3,23 @@ package com.womkk.model;
 public class Exhibit {
     private String id;
     private boolean isARCapable;
-    private String name;
-    private String description;
+    private String nameEn;
+    private String nameRu;
+    private String descriptionEn;
+    private String descriptionRu;
     private String imageUrl;
+    private String mapLink;
 
     // Конструктор с параметрами
-    public Exhibit(String id, boolean isARCapable, String name, String description, String imageUrl) {
+    public Exhibit(String id, boolean isARCapable, String nameEn, String nameRu, String descriptionEn, String descriptionRu, String imageUrl, String mapLink) {
         this.id = id;
         this.isARCapable = isARCapable;
-        this.name = name;
-        this.description = description;
+        this.nameEn = nameEn;
+        this.nameRu = nameRu;
+        this.descriptionEn = descriptionEn;
+        this.descriptionRu = descriptionRu;
         this.imageUrl = imageUrl;
+        this.mapLink = mapLink;
     }
 
     // Конструктор без параметров
@@ -29,16 +35,28 @@ public class Exhibit {
         return isARCapable;
     }
 
-    public String getName() {
-        return name;
+    public String getNameEn() {
+        return nameEn;
     }
 
-    public String getDescription() {
-        return description;
+    public String getNameRu() {
+        return nameRu;
+    }
+
+    public String getDescriptionEn() {
+        return descriptionEn;
+    }
+
+    public String getDescriptionRu() {
+        return descriptionRu;
     }
 
     public String getImageUrl() {
         return imageUrl;
+    }
+
+    public String getMapLink() {
+        return mapLink;
     }
 
     // Метод toString для удобства отображения информации об объекте
@@ -47,9 +65,12 @@ public class Exhibit {
         return "Exhibit{" +
                 "id='" + id + '\'' +
                 ", isARCapable=" + isARCapable +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
+                ", nameEn='" + nameEn + '\'' +
+                ", nameRu='" + nameRu + '\'' +
+                ", descriptionEn='" + descriptionEn + '\'' +
+                ", descriptionRu='" + descriptionRu + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
+                ", mapLink='" + mapLink + '\'' +
                 '}';
     }
 }

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <!-- Заголовок раздела -->
@@ -47,6 +48,8 @@
 
                 <Button
                     android:id="@+id/save_language_button"
+                    android:minHeight="0dp"
+                    android:background="@drawable/rounded_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/save_settings"
@@ -73,6 +76,8 @@
 
                 <Button
                     android:id="@+id/save_theme_button"
+                    android:minHeight="0dp"
+                    android:background="@drawable/rounded_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/save_settings"
@@ -81,10 +86,12 @@
 
             <Button
                 android:id="@+id/request_permissions_button"
+                android:minHeight="0dp"
+                android:background="@drawable/rounded_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/request_permissions"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="30dp" />
 
             <TextView
                 android:id="@+id/cache_size_text"
@@ -95,6 +102,8 @@
 
             <Button
                 android:id="@+id/clear_cache_button"
+                android:minHeight="0dp"
+                android:background="@drawable/rounded_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/clear_cache"

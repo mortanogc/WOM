@@ -16,6 +16,7 @@ import com.womkk.R;
 import com.womkk.model.Exhibit;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class ExhibitsAdapter extends ArrayAdapter<Exhibit> {
@@ -66,7 +67,14 @@ public class ExhibitsAdapter extends ArrayAdapter<Exhibit> {
                     .load(exhibit.getImageUrl())
                     .placeholder(R.drawable.placeholder_image)
                     .into(imageView);
-            textView.setText(exhibit.getName());
+
+            // Определение текущего языка системы
+            String language = Locale.getDefault().getLanguage();
+            if (language.equals("ru")) {
+                textView.setText(exhibit.getNameRu());
+            } else {
+                textView.setText(exhibit.getNameEn());
+            }
         }
 
         return convertView;

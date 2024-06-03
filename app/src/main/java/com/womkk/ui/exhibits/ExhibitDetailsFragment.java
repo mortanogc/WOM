@@ -1,6 +1,7 @@
 package com.womkk.ui.exhibits;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,14 +20,16 @@ import com.womkk.R;
 import com.womkk.model.Exhibit;
 import com.womkk.ui.ar.ARActivity;
 
+import java.util.Locale;
+
 public class ExhibitDetailsFragment extends Fragment {
 
-    private com.womkk.ui.exhibits.ExhibitsViewModel exhibitsViewModel;
+    private ExhibitsViewModel exhibitsViewModel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        exhibitsViewModel = new ViewModelProvider(requireActivity()).get(com.womkk.ui.exhibits.ExhibitsViewModel.class);
+        exhibitsViewModel = new ViewModelProvider(requireActivity()).get(ExhibitsViewModel.class);
     }
 
     @Nullable
@@ -37,31 +40,43 @@ public class ExhibitDetailsFragment extends Fragment {
         ImageView imageView = view.findViewById(R.id.exhibit_image);
         TextView nameTextView = view.findViewById(R.id.exhibit_name);
         TextView descriptionTextView = view.findViewById(R.id.exhibit_description);
+        Button arButton = view.findViewById(R.id.ar_button);
+        Button mapButton = view.findViewById(R.id.map_button);  // Новая кнопка
 
         String exhibitId = getArguments().getString("exhibitId");
 
         Exhibit selectedExhibit = findExhibitById(exhibitId);
         if (selectedExhibit != null) {
-            nameTextView.setText(selectedExhibit.getName());
-            descriptionTextView.setText(selectedExhibit.getDescription());
+            String language = Locale.getDefault().getLanguage();
+            if (language.equals("ru")) {
+                nameTextView.setText(selectedExhibit.getNameRu());
+                descriptionTextView.setText(selectedExhibit.getDescriptionRu());
+            } else {
+                nameTextView.setText(selectedExhibit.getNameEn());
+                descriptionTextView.setText(selectedExhibit.getDescriptionEn());
+            }
             Glide.with(getContext()).load(selectedExhibit.getImageUrl()).into(imageView);
-
-            Button arButton = view.findViewById(R.id.ar_button);
 
             if (selectedExhibit.isARCapable()) {
                 arButton.setVisibility(View.VISIBLE);
-                arButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(getActivity(), ARActivity.class);
-                        intent.putExtra("exhibitId", selectedExhibit.getId());
-                        startActivity(intent);
-                    }
+                arButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(getActivity(), ARActivity.class);
+                    intent.putExtra("exhibitId", selectedExhibit.getId());
+                    startActivity(intent);
                 });
             } else {
                 arButton.setVisibility(View.GONE);
             }
 
+            if (selectedExhibit.getMapLink() != null && !selectedExhibit.getMapLink().isEmpty()) {
+                mapButton.setVisibility(View.VISIBLE);
+                mapButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(selectedExhibit.getMapLink()));
+                    startActivity(intent);
+                });
+            } else {
+                mapButton.setVisibility(View.GONE);
+            }
         }
 
         return view;

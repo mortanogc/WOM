@@ -5,27 +5,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.womkk.R;
 import com.womkk.model.Exhibit;
-
 import java.util.List;
 
 public class ExhibitsListFragment extends Fragment {
 
-    private com.womkk.ui.exhibits.ExhibitsViewModel exhibitsViewModel;
+    private ExhibitsViewModel exhibitsViewModel;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        exhibitsViewModel = new ViewModelProvider(requireActivity()).get(com.womkk.ui.exhibits.ExhibitsViewModel.class);
+        exhibitsViewModel = new ViewModelProvider(requireActivity()).get(ExhibitsViewModel.class);
     }
 
     @Nullable
@@ -34,11 +33,12 @@ public class ExhibitsListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_exhibit_list, container, false);
 
         GridView gridView = view.findViewById(R.id.grid_view);
+        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
 
         exhibitsViewModel.getExhibitList().observe(getViewLifecycleOwner(), new Observer<List<Exhibit>>() {
             @Override
             public void onChanged(List<Exhibit> exhibits) {
-                ExhibitsAdapter exhibitsAdapter = new ExhibitsAdapter(getContext(), R.layout.item_exhibit, exhibits, false); // Обратите внимание на передачу дополнительного параметра false
+                ExhibitsAdapter exhibitsAdapter = new ExhibitsAdapter(getContext(), R.layout.item_exhibit, exhibits, false);
                 gridView.setAdapter(exhibitsAdapter);
             }
         });
@@ -51,6 +51,13 @@ public class ExhibitsListFragment extends Fragment {
             Navigation.findNavController(view).navigate(R.id.action_exhibitsListFragment_to_exhibitDetailsFragment, bundle);
         });
 
+        swipeRefreshLayout.setOnRefreshListener(this::loadExhibitsFromFirestore);
+
         return view;
+    }
+
+    private void loadExhibitsFromFirestore() {
+        swipeRefreshLayout.setRefreshing(true);
+        exhibitsViewModel.loadExhibits(() -> swipeRefreshLayout.setRefreshing(false));
     }
 }

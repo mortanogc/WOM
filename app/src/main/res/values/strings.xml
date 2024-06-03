@@ -114,4 +114,6 @@
     <string name="exhibit_details">Детали экспоната</string>
     <string name="location_not_available">Местоположение недоступно</string>
     <string name="location_permission_denied">Разрешение на доступ к местоположению отклонено</string>
+
+    <string name="go_to_map">Перейти на карты</string>
 </resources>

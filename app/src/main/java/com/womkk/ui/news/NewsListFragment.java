@@ -5,18 +5,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.womkk.R;
 import com.womkk.model.News;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +23,7 @@ public class NewsListFragment extends Fragment {
     private RecyclerView recyclerView;
     private NewsListAdapter adapter;
     private List<News> newsList;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Nullable
     @Override
@@ -37,6 +36,7 @@ public class NewsListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.recycler_view);
+        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         newsList = new ArrayList<>();
@@ -47,13 +47,17 @@ public class NewsListFragment extends Fragment {
         recyclerView.addItemDecoration(dividerItemDecoration);
 
         loadNewsFromFirestore();
+
+        swipeRefreshLayout.setOnRefreshListener(this::loadNewsFromFirestore);
     }
 
     private void loadNewsFromFirestore() {
+        swipeRefreshLayout.setRefreshing(true);  // Показать индикатор загрузки
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("news")
                 .get()
                 .addOnCompleteListener(task -> {
+                    swipeRefreshLayout.setRefreshing(false);  // Скрыть индикатор загрузки
                     if (task.isSuccessful()) {
                         newsList.clear();
                         for (QueryDocumentSnapshot document : task.getResult()) {

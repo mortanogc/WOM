@@ -104,4 +104,5 @@
     <!--    Maps  -->
     <string name="location_not_available">Location not available</string>
     <string name="location_permission_denied">Location permission denied</string>
+    <string name="go_to_map">Go to Map</string>
 </resources>
