@@ -192,7 +192,13 @@ string cache_size
 string clear_cache
 string contact_info
 string exhibit_details
+string firebase_database_url
 string fullscreen_image_content_description
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string location_not_available
 string location_permission_denied
@@ -220,6 +226,7 @@ string navigation_drawer_open
 string permissions_granted
 string permissions_not_granted
 string privacy
+string project_id
 string request_permissions
 string save_settings
 string select_language

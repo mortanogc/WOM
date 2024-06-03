@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Museum of the World Ocean</string>
+    <string name="app_name">Музей Мирового океана</string>
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
-    <string name="nav_header_title">Amber Museum</string>
-    <string name="nav_header_subtitle">Mon-Fri 10:00-19:00 Sat-Sun 9:00-20:00</string>
-    <string name="nav_header_desc">Main menu</string>
-    <string name="action_settings">Settings</string>
+    <string name="nav_header_title">Музей Янтаря</string>
+    <string name="nav_header_subtitle">Пн-Пт 10:00-19:00 Сб-Вс 9:00-20:00</string>
+    <string name="nav_header_desc">Головное меню</string>
+    <string name="action_settings">Настройки</string>
 
-    <!--   review-->
+<!--   review-->
     <string-array name="ratings">
         <item>1</item>
         <item>2</item>
@@ -17,91 +16,102 @@
         <item>5</item>
     </string-array>
 
-    <string name="average_rating">Rating</string>
-    <string name="add_review">Add review</string>
+    <string name="average_rating">Рейтинг</string>
+    <string name="add_review">Создать отзыв</string>
+
+
 
     <!-- INFO -->
-    <string name="museum_info">Museum information</string>
-
-    <string name="museum_about">
-    The only Amber Museum in Russia was opened in 1979. It is located in the center of Kaliningrad on the shore of Lake Verkhneye in a mid-19th century fortress tower.\n\n
-    The tower was built in 1853 under the supervision of Ernst Ludwig von Aster, chief of the engineering corps and developer of the overall plan for the fortifications of Königsberg. It was part of the citys defensive fortifications and was named after the Prussian Field Marshal Friedrich Karl Dohna, a participant in the War of Liberation against Napoleonic invasion. The building is also a monument of World War II.\n
-    The Amber Museum is a museum dedicated to a single mineral. The exhibition is located on three floors of the building, with a total area of about 1000 sq. meters. It is divided into natural-scientific and cultural-historical sections.\n
-    Amber is fossilized resin from ancient coniferous trees that grew more than 40 million years ago in the area of present-day Scandinavia and adjacent areas of the Baltic Sea bed.\n
-    The natural-scientific section of the collection features amber samples of various weights, colors, and degrees of transparency. The exhibition includes the largest "sunstone" in Russia, weighing 4 kg 280 g. A significant part of the collection consists of amber samples with inclusions of animal and plant remains that were trapped in the once liquid and sticky resin tens of millions of years ago. Inclusions in Baltic amber are of great scientific interest due to their diversity and excellent preservation. They are valuable for refining our knowledge of the flora and fauna, as well as the climatic conditions on Earth 40-45 million years ago. Today, the collection of the Kaliningrad Amber Museum is the main Russian national fund of inclusions in Baltic amber.
-</string>
-
-    <string name="museum_address">Museum address: 236016, Kaliningrad, Marshal Vasilevsky Square, 1.</string>
-
-    <string name="museum_working_hours">Working hours: Mon-Fri 10:00-19:00 Sat-Sun 9:00-20:00</string>
-
-    <string name="privacy">© 2005 — 2023 STATE BUDGETARY INSTITUTION OF CULTURE "KALININGRAD REGIONAL AMBER MUSEUM". All rights reserved.</string>
-
-    <string name="museum_contact_info">Contacts:\n
-            tel./fax +7 (4012) 466-550, e-mail: office@ambermuseum.ru – reception;\n
-            tel./fax +7 (4012) 466-888, e-mail: info@ambermuseum.ru – information department;\n
-            tel./fax +7 (4012) 538-219, e-mail: visitor@ambermuseum.ru – tour booking.</string>
-
-    <string name="app_info">Application and author information</string>
-
-    <string name="app_description1">TMuseum AR is an application that will help you learn more about the exhibits, news, and events of the museum using augmented reality.</string>
-
-    <string name="about_author">About the author: Sergey Mortano/Shchukin, just a strange student</string>
-
-    <string name="contact_info">Contacts: mortanogc@gmail.com</string>
-
-    <string name="app_version">Version: 1.1.2</string>
-
-    <!--permission-->
-    <string name="permissions_not_granted">Not all permissions granted</string>
-
-    <string name="hello_blank_fragment">Hello in the blank fragment, how did you get here?</string>
-
-    <!-- ... -->
-    <string name="welcome">Welcome to Museum AR!</string>
-    <string name="app_description">Museum AR is an application that will help you learn more about the exhibits, news, and events of the museum using augmented reality. Travel through the museum, discover new exhibits, and share your reviews!\n</string>
-    <string name="app_description_2">This application was specially created for a coursework and is part of a larger project</string>
-    <!--   reviews     -->
-    <string name="fullscreen_image_content_description">Fullscreen image</string>
-
-    <!--    Settings    -->
-    <string name="nav_home">Home</string>
+        <string name="museum_info">Информация о музее</string>
 
 
-    <string name="select_language">Select Language</string>
-    <string name="select_theme">Select Theme</string>
-    <string name="save_settings">Save Settings</string>
-    <string name="request_permissions">Request Permissions</string>
-    <string name="settings_applied">Settings applied</string>
-    <string name="settings_saved">Settings saved</string>
-    <string name="permissions_granted">All permissions are already granted</string>
-    <string name="cache_size">Cache size:</string>
-    <string name="clear_cache">Clear Cache</string>
+        <string name="museum_about">Единственный в России Музей янтаря был открыт в 1979 году. Он расположен в центре Калининграда на берегу озера Верхнее в крепостной башне середины ХIХ века.\n\n
+
+Башня была построена в 1853 году под руководством разработчика общего плана крепостных сооружений Кёнигсберга шефа инженерного корпуса Эрнста Людвига фон Астера и входила в систему городских оборонительных укреплений. Она носила имя прусского генерал-фельдмаршала Фридриха Карла Дона, участника освободительной войны против наполеоновского нашествия. Здание является также памятником Второй мировой войны.\n
+
+Музей янтаря – это музей одного минерала. Экспозиция расположена на трех этажах здания общей площадью около 1000 кв. метров. По содержанию она делится на естественно-научную и культурно-историческую части.\n
+
+Янтарь – это окаменевшая смола древних хвойных деревьев, произраставших более 40 млн. лет назад на современной территории Скандинавского полуострова и прилегающих к нему областях дна Балтийского моря.\n
+
+В естественно-научном разделе собрания представлены различные по весу, цветовой гамме, степени прозрачности образцы янтаря. В экспозиции находится самый крупный в России «солнечный камень»: его вес – 4 кг 280 г. Значительную часть коллекции составляют образцы янтаря с включениями остатков животных и растительных организмов, попавших десятки миллионов лет назад в некогда жидкую и вязкую смолу. Включения в балтийском янтаре представляют большой научный интерес благодаря своему разнообразию и превосходной сохранности. Они ценны для уточнения наших знаний о флоре и фауне, а также климатических условиях на Земле 40 – 45 млн. лет назад. На сегодняшний день коллекция Калининградского музея янтаря является главным российским национальным фондом инклюзов в балтийском янтаре.</string>
+
+
+
+        <string name="museum_address">Адрес музея: 236016, г. Калининград, пл. Маршала Василевского, 1.</string>
+
+
+        <string name="museum_working_hours">Рабочие часы: Пн-Пт 10:00-19:00 Сб-Вс 9:00-20:00</string>
+
+
+        <string name="privacy">© 2005 — 2023 ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ КУЛЬТУРЫ "КАЛИНИНГРАДСКИЙ ОБЛАСТНОЙ МУЗЕЙ ЯНТАРЯ". Все права защищены.</string>
+
+
+        <string name="museum_contact_info">Контакты:\n
+            тел./факс +7 (4012) 466-550, e-mail: office@ambermuseum.ru – приемная;\n
+            тел./факс +7 (4012) 466-888, e-mail: info@ambermuseum.ru – отдел информации;\n
+            тел./факс +7 (4012) 538-219, e-mail: visitor@ambermuseum.ru – заказ экскурсий.</string>
+
+
+        <string name="app_info">Информация о приложении и авторе</string>
+
+
+        <string name="app_description1">TMuseum AR - это приложение, которое поможет вам узнать больше об экспонатах, новостях и событиях музея с помощью дополненной реальности.</string>
+
+
+        <string name="about_author">Об авторе: Сергей Мортано/Щукин, просто странный студент </string>
+
+
+        <string name="contact_info">Контакты: mortanogc@gmail.com</string>
+
+
+        <string name="app_version">Версия: 1.1.2</string>
+
+<!--permission-->
+<string name="permissions_not_granted">Не все разрешения выданы</string>
+
+    <string name="hello_blank_fragment">Привет в пустой бланк, как ты сюда попал?</string>
+
+        <!-- ... -->
+        <string name="welcome">Добро пожаловать в Museum AR!</string>
+        <string name="app_description">Museum AR - это приложение, которое поможет вам узнать больше об экспонатах, новостях и событиях музея с помощью дополненной реальности. Путешествуйте по музею, открывайте новые экспонаты и делитесь своими отзывами!\n</string>
+        <string name="app_description_2">Данное приложение было создано специально для курсовой работы и является частью крупного проекта</string>
+<!--   отзывы     -->
+    <string name="fullscreen_image_content_description">Полноэкранное изображение</string>
+
+
+<!--    Settings    -->
+    <string name="nav_home">Начало</string>
+    <string name="nav_news">Новости</string>
+    <string name="nav_tickets">Билеты</string>
+    <string name="nav_map">Карта музея</string>
+    <string name="nav_about_museum">О музее</string>
+    <string name="nav_account">Аккаунт</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_about_app">О приложении</string>
+
+    <string name="select_language">Выбор языка</string>
+    <string name="select_theme">Выбор темы</string>
+    <string name="save_settings">Сохранить настройки</string>
+    <string name="request_permissions">Перезапрос разрешений</string>
+    <string name="settings_applied">Новые параметры применены</string>
+    <string name="settings_saved">Положение сохранено</string>
+    <string name="permissions_granted">Все разрешения уже выданы</string>
+    <string name="cache_size">Размер кеша:</string>
+    <string name="clear_cache">Очистить кеш</string>
     <string-array name="language_options">
-        <item>System Default</item>
-        <item>English</item>
-        <item>Russian</item>
+        <item>По умолчанию системы</item>
+        <item>Английский</item>
+        <item>Русский</item>
     </string-array>
     <string-array name="theme_options">
-        <item>System Default</item>
-        <item>Light</item>
-        <item>Dark</item>
+        <item>По умолчанию системы</item>
+        <item>Светлая</item>
+        <item>Темная</item>
     </string-array>
-
-    <!--    Menu   -->
-    <string name="nav_account">Account</string>
-    <string name="nav_settings">Settings</string>
-    <string name="nav_about_museum">About Museum</string>
-    <string name="nav_about_app">About App</string>
-    <string name="nav_news">News</string>
-    <string name="nav_tickets">Tickets</string>
-    <string name="nav_map">Museum Map</string>
-    <string name="nav_reviews">Reviews</string>
-    <string name="nav_menu">Menu</string>
-    <string name="nav_exhibits">Exhibits</string>
-    <string name="exhibit_details">Exhibit Details</string>
-
-    <!--    Maps  -->
-    <string name="location_not_available">Location not available</string>
-    <string name="location_permission_denied">Location permission denied</string>
+    <string name="nav_reviews">Отзывы</string>
+    <string name="nav_menu">Меню</string>
+    <string name="nav_exhibits">Экспонаты</string>
+    <string name="exhibit_details">Детали экспоната</string>
+    <string name="location_not_available">Местоположение недоступно</string>
+    <string name="location_permission_denied">Разрешение на доступ к местоположению отклонено</string>
 </resources>

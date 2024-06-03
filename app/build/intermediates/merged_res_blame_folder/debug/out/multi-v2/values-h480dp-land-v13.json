@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-76:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\6923e3c3b4b4a3eae650347f5db0b657\\transformed\\material-1.9.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\a29adb6e3248266b975710b1259aff05\\transformed\\material-1.9.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

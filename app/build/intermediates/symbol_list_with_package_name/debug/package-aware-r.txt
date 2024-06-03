@@ -1462,6 +1462,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardBackgroundColor
@@ -2274,6 +2278,8 @@ dimen abc_text_size_title_material_toolbar
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -3120,6 +3126,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_navigation
+drawable ic_other_sign_in
+drawable ic_passkey
+drawable ic_password
 drawable ic_search_black_24
 drawable ic_settings
 drawable ic_tickets
@@ -3346,6 +3355,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id buttonPanel
 id button_choose_photo
 id button_location
@@ -3959,6 +3973,8 @@ layout abc_tooltip
 layout activity_ar
 layout activity_main
 layout app_bar_main
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4072,6 +4088,8 @@ raw ar_environment_material_depth
 raw ar_environment_material_flat
 raw external_chroma_key_video_material
 raw external_plain_video_material
+raw firebase_common_keep
+raw firebase_crashlytics_keep
 raw keep_arcore
 raw sceneform_camera_material
 raw sceneform_default_light_probe
@@ -4120,6 +4138,8 @@ string abc_toolbar_collapse_description
 string about_author
 string action_settings
 string add_review
+string android_credentials_TYPE_PASSWORD_CREDENTIAL
+string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_description
 string app_description1
@@ -4160,13 +4180,24 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string contact_info
+string copy_toast_msg
 string error_a11y_label
 string error_icon_content_description
 string exhibit_details
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
+string firebase_database_url
 string fullscreen_image_content_description
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -4304,6 +4335,7 @@ string path_password_strike_through
 string permissions_granted
 string permissions_not_granted
 string privacy
+string project_id
 string request_permissions
 string save_settings
 string sceneform_add_camera_permission_via_settings
@@ -4867,6 +4899,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_Hidden
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog
@@ -5610,3 +5643,5 @@ styleable ZoomEngine alignment allowFlingInOverscroll animationDuration flingEna
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml ga_ad_services_config
+xml image_share_filepaths

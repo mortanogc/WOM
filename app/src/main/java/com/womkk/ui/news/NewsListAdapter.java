@@ -6,15 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.womkk.R;
 import com.womkk.model.News;
-
 import java.util.List;
+import java.util.Locale;
 
 public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.NewsViewHolder> {
 
@@ -36,9 +34,17 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.NewsVi
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
         News news = newsList.get(position);
-        holder.titleTextView.setText(news.getTitle());
-        holder.contentTextView.setText(news.getContent());
-        holder.news_date.setText(news.getDate());
+
+        String language = Locale.getDefault().getLanguage();
+        if (language.equals("ru")) {
+            holder.titleTextView.setText(news.getTitleRu());
+            holder.contentTextView.setText(news.getContentRu());
+        } else {
+            holder.titleTextView.setText(news.getTitleEn());
+            holder.contentTextView.setText(news.getContentEn());
+        }
+
+        holder.dateTextView.setText(news.getDate());
 
         Glide.with(context)
                 .load(news.getImageUrl())
@@ -51,19 +57,19 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.NewsVi
         return newsList.size();
     }
 
-    class NewsViewHolder extends RecyclerView.ViewHolder {
+    static class NewsViewHolder extends RecyclerView.ViewHolder {
 
         TextView titleTextView;
         TextView contentTextView;
         ImageView imageView;
-        TextView news_date;
+        TextView dateTextView;
 
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.news_title);
             contentTextView = itemView.findViewById(R.id.news_content);
             imageView = itemView.findViewById(R.id.news_image);
-            news_date = itemView.findViewById(R.id.news_date);
+            dateTextView = itemView.findViewById(R.id.news_date);
         }
     }
 }

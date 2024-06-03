@@ -19,11 +19,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatDelegate;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import java.util.Locale;
 import com.womkk.R;
 
@@ -113,11 +111,11 @@ public class SettingsFragment extends Fragment {
 
     private void applyLanguageSettings() {
         int languagePosition = languageSpinner.getSelectedItemPosition();
-        String languageCode = "en"; // Default to English
+        String languageCode = "ru"; // Default to Russian
         if (languagePosition == 1) {
-            languageCode = "en";
-        } else if (languagePosition == 2) {
             languageCode = "ru";
+        } else if (languagePosition == 2) {
+            languageCode = "en";
         }
 
         Locale locale = new Locale(languageCode);
@@ -175,7 +173,7 @@ public class SettingsFragment extends Fragment {
             if (allPermissionsGranted) {
                 Toast.makeText(getContext(), R.string.permissions_granted, Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getContext(), R.string.permissions_granted, Toast.LENGTH_SHORT).show();  // Вы можете изменить это сообщение на более подходящее
+                Toast.makeText(getContext(), R.string.permissions_not_granted, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -189,10 +187,12 @@ public class SettingsFragment extends Fragment {
     private boolean deleteDir(File dir) {
         if (dir != null && dir.isDirectory()) {
             String[] children = dir.list();
-            for (String child : children) {
-                boolean success = deleteDir(new File(dir, child));
-                if (!success) {
-                    return false;
+            if (children != null) {
+                for (String child : children) {
+                    boolean success = deleteDir(new File(dir, child));
+                    if (!success) {
+                        return false;
+                    }
                 }
             }
             return dir.delete();
@@ -213,11 +213,14 @@ public class SettingsFragment extends Fragment {
         if (dir == null) return 0;
         if (!dir.isDirectory()) return dir.length();
         long size = 0;
-        for (File file : dir.listFiles()) {
-            if (file.isDirectory()) {
-                size += getDirSize(file);
-            } else {
-                size += file.length();
+        File[] files = dir.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    size += getDirSize(file);
+                } else {
+                    size += file.length();
+                }
             }
         }
         return size;

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.womkk.app-mergeDebugResources-63:/values-es-rMX/values-es-rMX.xml",
+            "outputFile": "com.womkk.app-mergeDebugResources-76:/values-es-rMX/values-es-rMX.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\1f3b29501928ba4eeec0581a7d1ae259\\transformed\\jetified-core-1.31.0\\res\\values-es-rMX\\values.xml",
+                    "source": "C:\\Users\\serez\\.gradle\\caches\\transforms-3\\38c9c07c63a33d56b4294e0a2a0ca9a0\\transformed\\jetified-core-1.31.0\\res\\values-es-rMX\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

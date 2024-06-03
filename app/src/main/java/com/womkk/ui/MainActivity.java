@@ -18,6 +18,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
+
+import com.google.firebase.FirebaseApp;
 import com.womkk.R;
 import com.womkk.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -43,10 +45,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String[] REQUIRED_PERMISSIONS = new String[]{
             Manifest.permission.INTERNET,
             Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.CAMERA,
     };
 
-    private static final String MAPKIT_API_KEY = "";
+    private static final String MAPKIT_API_KEY = "d0c42135-50be-4de5-8cff-1429297cad25";
 
     static {
         MapKitFactory.setApiKey(MAPKIT_API_KEY);
@@ -56,12 +57,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Инициализация Firebase
+        FirebaseApp.initializeApp(this);
+
+        preferences = getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE);
+
         // Применение настроек языка и темы
         applySavedSettings();
 
         MapKitFactory.initialize(this);
-
-        preferences = getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE);
 
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
@@ -135,11 +139,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Применение языка
         int languagePosition = preferences.getInt("language", 0);
-        String languageCode = "en"; // Default to English
+        String languageCode = "ru"; // Default to Russian
         if (languagePosition == 1) {
-            languageCode = "en";
-        } else if (languagePosition == 2) {
             languageCode = "ru";
+        } else if (languagePosition == 2) {
+            languageCode = "en";
         }
 
         Locale locale = new Locale(languageCode);
