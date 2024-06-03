@@ -33,14 +33,18 @@ public final class FragmentExhibitDetailsBinding implements ViewBinding {
   @NonNull
   public final TextView exhibitName;
 
+  @NonNull
+  public final Button mapButton;
+
   private FragmentExhibitDetailsBinding(@NonNull ScrollView rootView, @NonNull Button arButton,
       @NonNull TextView exhibitDescription, @NonNull ImageView exhibitImage,
-      @NonNull TextView exhibitName) {
+      @NonNull TextView exhibitName, @NonNull Button mapButton) {
     this.rootView = rootView;
     this.arButton = arButton;
     this.exhibitDescription = exhibitDescription;
     this.exhibitImage = exhibitImage;
     this.exhibitName = exhibitName;
+    this.mapButton = mapButton;
   }
 
   @Override
@@ -94,8 +98,14 @@ public final class FragmentExhibitDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.map_button;
+      Button mapButton = ViewBindings.findChildViewById(rootView, id);
+      if (mapButton == null) {
+        break missingId;
+      }
+
       return new FragmentExhibitDetailsBinding((ScrollView) rootView, arButton, exhibitDescription,
-          exhibitImage, exhibitName);
+          exhibitImage, exhibitName, mapButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

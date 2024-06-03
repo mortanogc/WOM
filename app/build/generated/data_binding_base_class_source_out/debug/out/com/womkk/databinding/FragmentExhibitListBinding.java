@@ -4,10 +4,10 @@ package com.womkk.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.womkk.R;
@@ -17,19 +17,24 @@ import java.lang.String;
 
 public final class FragmentExhibitListBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final SwipeRefreshLayout rootView;
 
   @NonNull
   public final GridView gridView;
 
-  private FragmentExhibitListBinding(@NonNull FrameLayout rootView, @NonNull GridView gridView) {
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshLayout;
+
+  private FragmentExhibitListBinding(@NonNull SwipeRefreshLayout rootView,
+      @NonNull GridView gridView, @NonNull SwipeRefreshLayout swipeRefreshLayout) {
     this.rootView = rootView;
     this.gridView = gridView;
+    this.swipeRefreshLayout = swipeRefreshLayout;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public SwipeRefreshLayout getRoot() {
     return rootView;
   }
 
@@ -60,7 +65,10 @@ public final class FragmentExhibitListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentExhibitListBinding((FrameLayout) rootView, gridView);
+      SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) rootView;
+
+      return new FragmentExhibitListBinding((SwipeRefreshLayout) rootView, gridView,
+          swipeRefreshLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

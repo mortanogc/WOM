@@ -88,6 +88,7 @@ MERGED from [com.google.android.gms:play-services-measurement-base:22.0.1] C:\Us
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\serez\.gradle\caches\transforms-4\a0ea6463d0345f4b5fe16ca1c4b937e4\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\serez\.gradle\caches\transforms-4\d2a60411fa30067e4fadd4a1d277a741\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\serez\.gradle\caches\transforms-4\f5dafeac7536e1c0f4e7e907a519f170\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\383fc74e16f90523bd636edc4d7889cd\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\serez\.gradle\caches\transforms-4\0dc4aa37327424df96138fc73507e241\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\3c33a35916b7ee52a01216039b4dff07\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\beeea01d7029c256eb411d7cb53db4ce\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -113,6 +114,7 @@ MERGED from [com.otaliastudios:zoomlayout:1.9.0] C:\Users\serez\.gradle\caches\t
 MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] C:\Users\serez\.gradle\caches\transforms-4\c2eeebc60b20bb2dcfc46d6ac6cd0949\transformed\jetified-subsampling-scale-image-view-3.10.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\a952260d74a2b2e01b9b80aabbf42bfa\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\534b5bb37d6afff926218c19708bb87c\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\serez\.gradle\caches\transforms-4\bf567d3c2afd0c6272656cf691a7bd40\transformed\jetified-gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\serez\.gradle\caches\transforms-4\1a4ca203d2c3663e99cec69845936342\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.otaliastudios.opengl:egloo:0.6.1] C:\Users\serez\.gradle\caches\transforms-4\5c06f0ac2f59a48fb7a8a9d5deea8d8b\transformed\jetified-egloo-0.6.1\AndroidManifest.xml:2:1-11:12
@@ -131,7 +133,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\se
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\serez\.gradle\caches\transforms-4\795b05e0d403571f3db4856cfef08fa5\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.filament:gltfio-android:1.21.1] C:\Users\serez\.gradle\caches\transforms-4\200f4b0276c0b8c4dd9b410dfd10d34d\transformed\jetified-gltfio-android-1.21.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.filament:filament-android:1.21.1] C:\Users\serez\.gradle\caches\transforms-4\32224a11722c4de64b0a88e7a06f4260\transformed\jetified-filament-android-1.21.1\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\380e1fae911c90872d68d78256457ef6\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\a986fc02f7fc96d6ce6a2f1a02ce2db9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.alexvasilkov:gesture-views:2.8.3] C:\Users\serez\.gradle\caches\transforms-4\f0d78c99aa52557630ec30202849141c\transformed\jetified-gesture-views-2.8.3\AndroidManifest.xml:2:1-11:12
@@ -520,6 +521,8 @@ MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\serez\.gradle\caches\tra
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\serez\.gradle\caches\transforms-4\d2a60411fa30067e4fadd4a1d277a741\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\serez\.gradle\caches\transforms-4\f5dafeac7536e1c0f4e7e907a519f170\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\serez\.gradle\caches\transforms-4\f5dafeac7536e1c0f4e7e907a519f170\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\383fc74e16f90523bd636edc4d7889cd\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\383fc74e16f90523bd636edc4d7889cd\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\serez\.gradle\caches\transforms-4\0dc4aa37327424df96138fc73507e241\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\serez\.gradle\caches\transforms-4\0dc4aa37327424df96138fc73507e241\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\3c33a35916b7ee52a01216039b4dff07\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -570,6 +573,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\serez\.gradle\
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\a952260d74a2b2e01b9b80aabbf42bfa\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\534b5bb37d6afff926218c19708bb87c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\534b5bb37d6afff926218c19708bb87c\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\serez\.gradle\caches\transforms-4\bf567d3c2afd0c6272656cf691a7bd40\transformed\jetified-gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\serez\.gradle\caches\transforms-4\bf567d3c2afd0c6272656cf691a7bd40\transformed\jetified-gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\serez\.gradle\caches\transforms-4\1a4ca203d2c3663e99cec69845936342\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -606,8 +611,6 @@ MERGED from [com.google.android.filament:gltfio-android:1.21.1] C:\Users\serez\.
 MERGED from [com.google.android.filament:gltfio-android:1.21.1] C:\Users\serez\.gradle\caches\transforms-4\200f4b0276c0b8c4dd9b410dfd10d34d\transformed\jetified-gltfio-android-1.21.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.filament:filament-android:1.21.1] C:\Users\serez\.gradle\caches\transforms-4\32224a11722c4de64b0a88e7a06f4260\transformed\jetified-filament-android-1.21.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.filament:filament-android:1.21.1] C:\Users\serez\.gradle\caches\transforms-4\32224a11722c4de64b0a88e7a06f4260\transformed\jetified-filament-android-1.21.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\5421e34f5bccde6b1ed043e08848b0c0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\380e1fae911c90872d68d78256457ef6\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\380e1fae911c90872d68d78256457ef6\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\a986fc02f7fc96d6ce6a2f1a02ce2db9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
