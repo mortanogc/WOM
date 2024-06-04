@@ -116,4 +116,48 @@
     <string name="location_permission_denied">Разрешение на доступ к местоположению отклонено</string>
 
     <string name="go_to_map">Перейти на карты</string>
+
+
+        <string name="login">Войти</string>
+        <string name="register">Регистрация</string>
+        <string name="forgot_password">Забыли пароль?</string>
+        <string name="first_name">Имя</string>
+        <string name="last_name">Фамилия</string>
+        <string name="email">Электронная почта</string>
+        <string name="password">Пароль</string>
+        <string name="change_password">Сменить пароль</string>
+        <string name="logout">Выйти</string>
+        <string name="login_successful">Вход выполнен успешно</string>
+        <string name="login_failed">Ошибка входа: %1$s</string>
+        <string name="registration_failed">Ошибка регистрации: %1$s</string>
+        <string name="user_registered_successfully">Пользователь успешно зарегистрирован</string>
+        <string name="error_saving_user">Ошибка сохранения пользователя: %1$s</string>
+        <string name="user_data_not_found">Данные пользователя не найдены</string>
+        <string name="error_loading_user_data">Ошибка загрузки данных пользователя: %1$s</string>
+        <string name="logged_out">Вы вышли</string>
+        <string name="password_reset_email_sent">Письмо для сброса пароля отправлено</string>
+    <string name="email_required">Требуется Email</string>
+    <string name="password_required">Требуется пароль</string>
+    <string name="last_name_required">Требуется фамилия</string>
+    <string name="first_name_required">Требуется имя</string>
+    <string name="error">Ошибка</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="update_name">Обновить имя</string>
+    <string name="current_password">Текущий Пароль</string>
+    <string name="name">Имя</string>
+    <string name="reauthentication_failed">Ошибка повторной аутентификации: </string>
+    <string name="error_changing_password">Ошибка изменения пароля: </string>
+    <string name="password_changed_successfully">Пароль успешно изменен</string>
+    <string name="name_updated_successfully">Имя успешно обновлено</string>
+    <string name="error_updating_name">Ошибка обновления имени: </string>
+    <string name="change_email">Изменить почту</string>
+    <string name="new_email">Новая электронная почта</string>
+    <string name="error_changing_email">Ошибка при изменении адреса электронной почты: </string>
+    <string name="email_updated_successfully">Адрес электронной почты успешно обновлен</string>
+    <string name="error_updating_email">Ошибка при обновлении адреса электронной почты: </string>
+    <string name="login_account">Вход в аккаунт</string>
+    <string name="register_account">Регистрация нового аккаунта</string>
+
+
+
 </resources>

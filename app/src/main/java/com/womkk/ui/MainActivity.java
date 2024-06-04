@@ -1,7 +1,5 @@
 package com.womkk.ui;
 
-import static android.net.http.SslCertificate.restoreState;
-
 import android.Manifest;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -16,24 +14,14 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.firebase.FirebaseApp;
 import com.womkk.R;
 import com.womkk.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.yandex.mapkit.MapKitFactory;
-import com.womkk.ui.about.AppInfoFragment;
-import com.womkk.ui.about.MuseumInfoFragment;
-import com.womkk.ui.account.AccountFragment;
-import com.womkk.ui.exhibits.ExhibitsListFragment;
-import com.womkk.ui.map.MuseumMapFragment;
-import com.womkk.ui.news.NewsListFragment;
-import com.womkk.ui.reviews.ReviewListFragment;
-import com.womkk.ui.settings.SettingsFragment;
-import com.womkk.ui.tickets.TicketsFragment;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -74,8 +62,14 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        setSupportActionBar(binding.toolbar);
+
         BottomNavigationView bottomNavigationView = binding.bottomNavView;
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_news, R.id.nav_map, R.id.nav_about_museum, R.id.nav_about_app, R.id.nav_exhibits, R.id.nav_reviews, R.id.nav_settings, R.id.nav_account, R.id.nav_tickets)
+                .build();
+        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {

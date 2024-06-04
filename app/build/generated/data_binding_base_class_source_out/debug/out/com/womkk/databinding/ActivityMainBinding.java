@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -29,13 +30,17 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final NavigationView navView;
 
+  @NonNull
+  public final Toolbar toolbar;
+
   private ActivityMainBinding(@NonNull DrawerLayout rootView,
       @NonNull BottomNavigationView bottomNavView, @NonNull DrawerLayout drawerLayout,
-      @NonNull NavigationView navView) {
+      @NonNull NavigationView navView, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.bottomNavView = bottomNavView;
     this.drawerLayout = drawerLayout;
     this.navView = navView;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -79,7 +84,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, bottomNavView, drawerLayout, navView);
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((DrawerLayout) rootView, bottomNavView, drawerLayout, navView,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -105,4 +105,45 @@
     <string name="location_not_available">Location not available</string>
     <string name="location_permission_denied">Location permission denied</string>
     <string name="go_to_map">Go to Map</string>
+
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_failed">Login failed: %1$s</string>
+    <string name="registration_failed">Registration failed: %1$s</string>
+    <string name="user_registered_successfully">User registered successfully</string>
+    <string name="error_saving_user">Error saving user: %1$s</string>
+    <string name="user_data_not_found">User data not found</string>
+    <string name="error_loading_user_data">Error loading user data: %1$s</string>
+    <string name="logged_out">Logged out</string>
+    <string name="password_reset_email_sent">Password reset email sent</string>
+    <string name="email_required">Email is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="last_name_required">Last name is required</string>
+    <string name="first_name_required">First name is required</string>
+    <string name="error">Error</string>
+    <string name="new_password">New Password</string>
+    <string name="update_name">Update Name</string>
+    <string name="current_password">Current Password</string>
+    <string name="name">Name</string>
+    <string name="reauthentication_failed">Reauthentication failed: </string>
+    <string name="error_changing_password">Error changing password: </string>
+    <string name="password_changed_successfully">Password changed successfully</string>
+    <string name="name_updated_successfully">Name updated successfully</string>
+    <string name="error_updating_name">Error updating name: </string>
+    <string name="change_email">Change Email</string>
+    <string name="new_email">New Email</string>
+    <string name="error_changing_email">Error changing email: </string>
+    <string name="email_updated_successfully">Email updated successfully</string>
+    <string name="error_updating_email">Error updating email: </string>
+    <string name="login_account">Login to your Account</string>
+    <string name="register_account">Register new Account</string>
 </resources>

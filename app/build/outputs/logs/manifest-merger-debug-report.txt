@@ -16,6 +16,8 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\serez\.gradle\caches\t
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\serez\.gradle\caches\transforms-4\3851d3fde7d50cfe98312ce04930365c\transformed\jetified-glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\07a79f790eefc41aa0210c9c1a0bdb99\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:17:1-56:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\61016c480b1209fae173fac4da56de55\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\serez\.gradle\caches\transforms-4\146c19aca07baaed4d3082cf24e0868c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:17:1-66:12
 MERGED from [com.yandex.android:maps.mobile:4.6.1-full] C:\Users\serez\.gradle\caches\transforms-4\63379c42dc7fded5b43c40bd138f70b0\transformed\jetified-maps.mobile-4.6.1-full\AndroidManifest.xml:3:1-35:12
@@ -66,6 +68,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\sere
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\c3e460f50c209d73dac83b5b33310748\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.1] C:\Users\serez\.gradle\caches\transforms-4\211a4daaea860e86ddfe1be47f698c95\transformed\jetified-play-services-measurement-impl-22.0.1\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\serez\.gradle\caches\transforms-4\12cfc3ef68c3446c47a539ee70e23e43\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\d4a3c5e01d5a9cc42c557c2eb2c3eee8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\22cdf311ddef6350ab1848e0ea702d2e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\4764257d94a10b32100a4f2f3f9109ca\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\serez\.gradle\caches\transforms-4\7b38c6a3374217bb2c80f213d4463f5c\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:17:1-22:12
@@ -95,9 +98,11 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ser
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\cace752469d264db180ea09b5ef84f2a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.browser:browser:1.4.0] C:\Users\serez\.gradle\caches\transforms-4\45477791f34f1fcceee9204fe8d3e13c\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\serez\.gradle\caches\transforms-4\bf813c60720aa29b231dcac953ce891a\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\076caca0c9ff16e7a29196f322e0ec4b\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\9eb8eabea173faab13dc300214cbf037\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\ed1cfb7b80f5b1eef10e20ff9fe3cec1\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\e1b9e27fc334f6de052535c1f2325e38\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\serez\.gradle\caches\transforms-4\b1ebcc12d01c955cbb2ab54efa429792\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-4\a4f47b5dc04a016c39a491f9ae83999b\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\serez\.gradle\caches\transforms-4\6626ab9509e88a71e13df43910c7fc15\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
@@ -199,6 +204,8 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\serez\.gradle\cach
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\serez\.gradle\caches\transforms-4\3851d3fde7d50cfe98312ce04930365c\transformed\jetified-glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\serez\.gradle\caches\transforms-4\146c19aca07baaed4d3082cf24e0868c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:28:5-64:19
@@ -375,6 +382,10 @@ MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:21:5-23:151
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\07a79f790eefc41aa0210c9c1a0bdb99\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\07a79f790eefc41aa0210c9c1a0bdb99\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\61016c480b1209fae173fac4da56de55\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\61016c480b1209fae173fac4da56de55\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\serez\.gradle\caches\transforms-4\146c19aca07baaed4d3082cf24e0868c\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:20:5-44
@@ -477,6 +488,8 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.1] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.1] C:\Users\serez\.gradle\caches\transforms-4\211a4daaea860e86ddfe1be47f698c95\transformed\jetified-play-services-measurement-impl-22.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\serez\.gradle\caches\transforms-4\12cfc3ef68c3446c47a539ee70e23e43\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\serez\.gradle\caches\transforms-4\12cfc3ef68c3446c47a539ee70e23e43\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\d4a3c5e01d5a9cc42c557c2eb2c3eee8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\d4a3c5e01d5a9cc42c557c2eb2c3eee8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\22cdf311ddef6350ab1848e0ea702d2e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\22cdf311ddef6350ab1848e0ea702d2e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\4764257d94a10b32100a4f2f3f9109ca\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -535,12 +548,16 @@ MERGED from [androidx.browser:browser:1.4.0] C:\Users\serez\.gradle\caches\trans
 MERGED from [androidx.browser:browser:1.4.0] C:\Users\serez\.gradle\caches\transforms-4\45477791f34f1fcceee9204fe8d3e13c\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\serez\.gradle\caches\transforms-4\bf813c60720aa29b231dcac953ce891a\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\serez\.gradle\caches\transforms-4\bf813c60720aa29b231dcac953ce891a\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\076caca0c9ff16e7a29196f322e0ec4b\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\076caca0c9ff16e7a29196f322e0ec4b\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\e762d6affa3a78c961de8845bead707f\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\9eb8eabea173faab13dc300214cbf037\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\serez\.gradle\caches\transforms-4\9eb8eabea173faab13dc300214cbf037\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\ed1cfb7b80f5b1eef10e20ff9fe3cec1\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\ed1cfb7b80f5b1eef10e20ff9fe3cec1\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\e1b9e27fc334f6de052535c1f2325e38\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\serez\.gradle\caches\transforms-4\e1b9e27fc334f6de052535c1f2325e38\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\serez\.gradle\caches\transforms-4\b1ebcc12d01c955cbb2ab54efa429792\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\serez\.gradle\caches\transforms-4\b1ebcc12d01c955cbb2ab54efa429792\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.9.0] C:\Users\serez\.gradle\caches\transforms-4\a4f47b5dc04a016c39a491f9ae83999b\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
@@ -748,6 +765,60 @@ ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\serez\.gradle\caches\transforms-4\842b2b4854dd3599932d45060f2fdc03\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:22:22-62
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\serez\.gradle\caches\transforms-4\e7a3cea597c983d03fc0713a58f57698\transformed\jetified-zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
 ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\serez\.gradle\caches\transforms-4\ea04c8958f8ec3ee3fc26be9cc03edf0\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
 	android:value
