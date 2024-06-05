@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +33,8 @@ public class ReviewListFragment extends Fragment {
     private FirebaseFirestore db;
     private List<Review> reviews;
     private SwipeRefreshLayout swipeRefreshLayout;
+    private TextView tvAverageRating;
+    private ImageView ivStar;
 
     @Nullable
     @Override
@@ -42,6 +46,9 @@ public class ReviewListFragment extends Fragment {
         reviews = new ArrayList<>();
         reviewAdapter = new ReviewAdapter(reviews, getContext());
         recyclerView.setAdapter(reviewAdapter);
+
+        tvAverageRating = view.findViewById(R.id.tv_average_rating);
+        ivStar = view.findViewById(R.id.iv_star);
 
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_layout);
         swipeRefreshLayout.setOnRefreshListener(this::loadReviews);
@@ -65,14 +72,27 @@ public class ReviewListFragment extends Fragment {
                     if (task.isSuccessful()) {
                         reviews.clear();
                         QuerySnapshot querySnapshot = task.getResult();
+                        float totalRating = 0;
+                        int count = 0;
                         for (DocumentSnapshot document : querySnapshot.getDocuments()) {
                             Review review = document.toObject(Review.class);
                             if (review != null) {
                                 review.setReviewId(document.getId());
                                 reviews.add(review);
+                                totalRating += review.getRating();
+                                count++;
                             }
                         }
                         reviewAdapter.notifyDataSetChanged();
+
+                        if (count > 0) {
+                            float averageRating = totalRating / count;
+                            tvAverageRating.setText(String.format("%.1f/5", averageRating));
+                            ivStar.setImageResource(android.R.drawable.btn_star_big_on);
+                        } else {
+                            tvAverageRating.setText("0.0/5");
+                            ivStar.setImageResource(android.R.drawable.btn_star_big_off);
+                        }
                     } else {
                         // handle the error
                     }
