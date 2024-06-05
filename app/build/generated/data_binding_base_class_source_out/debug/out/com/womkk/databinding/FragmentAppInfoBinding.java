@@ -4,10 +4,11 @@ package com.womkk.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.womkk.R;
@@ -17,7 +18,7 @@ import java.lang.String;
 
 public final class FragmentAppInfoBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final TextView aboutAuthor;
@@ -29,29 +30,29 @@ public final class FragmentAppInfoBinding implements ViewBinding {
   public final TextView appDescription2;
 
   @NonNull
-  public final TextView appInfoTitle;
-
-  @NonNull
   public final TextView appVersion;
 
   @NonNull
   public final TextView contactInfo;
 
-  private FragmentAppInfoBinding(@NonNull ScrollView rootView, @NonNull TextView aboutAuthor,
+  @NonNull
+  public final Toolbar toolbar;
+
+  private FragmentAppInfoBinding(@NonNull CoordinatorLayout rootView, @NonNull TextView aboutAuthor,
       @NonNull TextView appDescription, @NonNull TextView appDescription2,
-      @NonNull TextView appInfoTitle, @NonNull TextView appVersion, @NonNull TextView contactInfo) {
+      @NonNull TextView appVersion, @NonNull TextView contactInfo, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.aboutAuthor = aboutAuthor;
     this.appDescription = appDescription;
     this.appDescription2 = appDescription2;
-    this.appInfoTitle = appInfoTitle;
     this.appVersion = appVersion;
     this.contactInfo = contactInfo;
+    this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -94,12 +95,6 @@ public final class FragmentAppInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.app_info_title;
-      TextView appInfoTitle = ViewBindings.findChildViewById(rootView, id);
-      if (appInfoTitle == null) {
-        break missingId;
-      }
-
       id = R.id.app_version;
       TextView appVersion = ViewBindings.findChildViewById(rootView, id);
       if (appVersion == null) {
@@ -112,8 +107,14 @@ public final class FragmentAppInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAppInfoBinding((ScrollView) rootView, aboutAuthor, appDescription,
-          appDescription2, appInfoTitle, appVersion, contactInfo);
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentAppInfoBinding((CoordinatorLayout) rootView, aboutAuthor, appDescription,
+          appDescription2, appVersion, contactInfo, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -5,11 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -29,19 +32,42 @@ public final class FragmentReviewListBinding implements ViewBinding {
   public final ImageView ivStar;
 
   @NonNull
+  public final ConstraintLayout ratingContainer;
+
+  @NonNull
+  public final LinearLayout ratingLayout;
+
+  @NonNull
   public final RecyclerView rvReviews;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshLayout;
+
+  @NonNull
+  public final Toolbar toolbar;
 
   @NonNull
   public final TextView tvAverageRating;
 
+  @NonNull
+  public final TextView tvRatingLabel;
+
   private FragmentReviewListBinding(@NonNull ConstraintLayout rootView,
       @NonNull FloatingActionButton fabAddReview, @NonNull ImageView ivStar,
-      @NonNull RecyclerView rvReviews, @NonNull TextView tvAverageRating) {
+      @NonNull ConstraintLayout ratingContainer, @NonNull LinearLayout ratingLayout,
+      @NonNull RecyclerView rvReviews, @NonNull SwipeRefreshLayout swipeRefreshLayout,
+      @NonNull Toolbar toolbar, @NonNull TextView tvAverageRating,
+      @NonNull TextView tvRatingLabel) {
     this.rootView = rootView;
     this.fabAddReview = fabAddReview;
     this.ivStar = ivStar;
+    this.ratingContainer = ratingContainer;
+    this.ratingLayout = ratingLayout;
     this.rvReviews = rvReviews;
+    this.swipeRefreshLayout = swipeRefreshLayout;
+    this.toolbar = toolbar;
     this.tvAverageRating = tvAverageRating;
+    this.tvRatingLabel = tvRatingLabel;
   }
 
   @Override
@@ -83,9 +109,33 @@ public final class FragmentReviewListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rating_container;
+      ConstraintLayout ratingContainer = ViewBindings.findChildViewById(rootView, id);
+      if (ratingContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.rating_layout;
+      LinearLayout ratingLayout = ViewBindings.findChildViewById(rootView, id);
+      if (ratingLayout == null) {
+        break missingId;
+      }
+
       id = R.id.rv_reviews;
       RecyclerView rvReviews = ViewBindings.findChildViewById(rootView, id);
       if (rvReviews == null) {
+        break missingId;
+      }
+
+      id = R.id.swipe_refresh_layout;
+      SwipeRefreshLayout swipeRefreshLayout = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefreshLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
         break missingId;
       }
 
@@ -95,8 +145,15 @@ public final class FragmentReviewListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_rating_label;
+      TextView tvRatingLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvRatingLabel == null) {
+        break missingId;
+      }
+
       return new FragmentReviewListBinding((ConstraintLayout) rootView, fabAddReview, ivStar,
-          rvReviews, tvAverageRating);
+          ratingContainer, ratingLayout, rvReviews, swipeRefreshLayout, toolbar, tvAverageRating,
+          tvRatingLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

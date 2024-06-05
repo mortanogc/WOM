@@ -158,6 +158,41 @@
     <string name="login_account">Вход в аккаунт</string>
     <string name="register_account">Регистрация нового аккаунта</string>
 
+    <string name="your_name">Ваше имя</string>
+    <string name="review_title">Краткий отзыв</string>
+    <string name="your_review">Ваш отзыв</string>
+    <string name="your_rating">Ваша оценка</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="submit_review">Отправить отзыв</string>
+    <string name="anonymous">Анонимно</string>
+    <string name="review_submitted_for_approval">Отзыв отправлен на рассмотрение</string>
+    <string name="error_submitting_review">Ошибка при отправке отзыва</string>
+    <string name="edit_review">Редактировать отзыв</string>
+    <string name="delete_review">Удалить отзыв</string>
 
+
+
+    <string name="permission_required">Для выбора изображения требуется разрешение на доступ к галерее</string>
+    <string name="fill_all_fields">Пожалуйста, заполните все поля</string>
+    <string name="error_loading_image">Ошибка загрузки изображения</string>
+    <string name="review_submitted_for_review">Отзыв отправлен на рассмотрение</string>
+    <string name="review_updated">Отзыв успешно обновлен</string>
+    <string name="error_updating_review">Ошибка обновления отзыва</string>
+
+
+    <string name="anonymous_review">Анонимный отзыв</string>
+    <string name="update_review">Обновить отзыв</string>
+    <string name="review_updated_successfully">Отзыв успешно обновлен</string>
+    <string name="error_loading_reviews">Ошибка загрузки отзывов</string>
+    <string name="error_loading_review">Ошибка загрузки отзыва</string>
+    <string name="short_review">Краткий отзыв</string>
+    <string name="museum_rating">Рейтинг музея</string>
+
+    <string name="confirm_delete_title">Подтвердите удаление</string>
+    <string name="confirm_delete_message">Вы уверены, что хотите удалить этот отзыв?</string>
+    <string name="review_deleted">Отзыв успешно удален.</string>
+    <string name="error_deleting_review">Ошибка при удалении отзыва. Пожалуйста, попробуйте еще раз.</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
 
 </resources>

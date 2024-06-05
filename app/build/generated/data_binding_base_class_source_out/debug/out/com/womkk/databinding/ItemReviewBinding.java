@@ -40,6 +40,9 @@ public final class ItemReviewBinding implements ViewBinding {
   public final ImageView reviewImage3;
 
   @NonNull
+  public final ImageView reviewMenu;
+
+  @NonNull
   public final TextView reviewRating;
 
   @NonNull
@@ -54,8 +57,8 @@ public final class ItemReviewBinding implements ViewBinding {
   private ItemReviewBinding(@NonNull CardView rootView, @NonNull LinearLayout imageContainer,
       @NonNull TextView reviewAuthor, @NonNull TextView reviewDate, @NonNull ImageView reviewImage1,
       @NonNull ImageView reviewImage2, @NonNull ImageView reviewImage3,
-      @NonNull TextView reviewRating, @NonNull ImageView reviewStar, @NonNull TextView reviewText,
-      @NonNull TextView reviewTitle) {
+      @NonNull ImageView reviewMenu, @NonNull TextView reviewRating, @NonNull ImageView reviewStar,
+      @NonNull TextView reviewText, @NonNull TextView reviewTitle) {
     this.rootView = rootView;
     this.imageContainer = imageContainer;
     this.reviewAuthor = reviewAuthor;
@@ -63,6 +66,7 @@ public final class ItemReviewBinding implements ViewBinding {
     this.reviewImage1 = reviewImage1;
     this.reviewImage2 = reviewImage2;
     this.reviewImage3 = reviewImage3;
+    this.reviewMenu = reviewMenu;
     this.reviewRating = reviewRating;
     this.reviewStar = reviewStar;
     this.reviewText = reviewText;
@@ -132,6 +136,12 @@ public final class ItemReviewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.review_menu;
+      ImageView reviewMenu = ViewBindings.findChildViewById(rootView, id);
+      if (reviewMenu == null) {
+        break missingId;
+      }
+
       id = R.id.review_rating;
       TextView reviewRating = ViewBindings.findChildViewById(rootView, id);
       if (reviewRating == null) {
@@ -157,8 +167,8 @@ public final class ItemReviewBinding implements ViewBinding {
       }
 
       return new ItemReviewBinding((CardView) rootView, imageContainer, reviewAuthor, reviewDate,
-          reviewImage1, reviewImage2, reviewImage3, reviewRating, reviewStar, reviewText,
-          reviewTitle);
+          reviewImage1, reviewImage2, reviewImage3, reviewMenu, reviewRating, reviewStar,
+          reviewText, reviewTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

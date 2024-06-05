@@ -3,20 +3,27 @@ package com.womkk.ui.reviews;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.womkk.R;
 import com.womkk.model.Review;
 
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -27,6 +34,11 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
     public ReviewAdapter(List<Review> reviews, Context context) {
         this.reviews = reviews;
         this.context = context;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -78,6 +90,35 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
                 Glide.with(context).load(Review.base64ToBitmap(photos.get(2))).into(holder.reviewImage3);
             }
         }
+
+        // Проверка текущего пользователя для отображения меню
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null && review.getUserId().equals(user.getUid())) {
+            holder.reviewMenu.setVisibility(View.VISIBLE);
+            holder.reviewMenu.setOnClickListener(v -> {
+                PopupMenu popupMenu = new PopupMenu(context, holder.reviewMenu);
+                popupMenu.inflate(R.menu.review_item_menu);
+                popupMenu.setOnMenuItemClickListener(item -> {
+                    switch (item.getItemId()) {
+                        case R.id.action_edit_review:
+                            // Логика для редактирования отзыва
+                            Bundle bundle = new Bundle();
+                            bundle.putSerializable("review", reviewToHashMap(review));
+                            Navigation.findNavController(v).navigate(R.id.action_reviewListFragment_to_addReviewFragment, bundle);
+                            return true;
+                        case R.id.action_delete_review:
+                            // Логика для удаления отзыва
+                            deleteReview(review);
+                            return true;
+                        default:
+                            return false;
+                    }
+                });
+                popupMenu.show();
+            });
+        } else {
+            holder.reviewMenu.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -85,7 +126,34 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
         return reviews.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    private void deleteReview(Review review) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("reviews").document(review.getReviewId())
+                .delete()
+                .addOnSuccessListener(aVoid -> {
+                    reviews.remove(review);
+                    notifyDataSetChanged();
+                    Toast.makeText(context, R.string.review_deleted, Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(context, R.string.error_deleting_review, Toast.LENGTH_SHORT).show();
+                });
+    }
+
+    private HashMap<String, Object> reviewToHashMap(Review review) {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("userId", review.getUserId());
+        map.put("authorName", review.getAuthorName());
+        map.put("rating", review.getRating());
+        map.put("title", review.getTitle());
+        map.put("reviewText", review.getReviewText());
+        map.put("photos", review.getPhotos());
+        map.put("reviewDate", review.getReviewDate());
+        map.put("approved", review.isApproved());
+        return map;
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView authorName;
         TextView reviewDate;
         TextView rating;
@@ -94,6 +162,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
         ImageView reviewImage1;
         ImageView reviewImage2;
         ImageView reviewImage3;
+        ImageView reviewMenu;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -105,6 +174,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
             reviewImage1 = itemView.findViewById(R.id.review_image_1);
             reviewImage2 = itemView.findViewById(R.id.review_image_2);
             reviewImage3 = itemView.findViewById(R.id.review_image_3);
+            reviewMenu = itemView.findViewById(R.id.review_menu);
         }
     }
 }

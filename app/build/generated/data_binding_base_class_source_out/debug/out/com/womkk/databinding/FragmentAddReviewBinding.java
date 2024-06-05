@@ -5,13 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.womkk.R;
@@ -21,7 +23,7 @@ import java.lang.String;
 
 public final class FragmentAddReviewBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final Button buttonChoosePhoto;
@@ -30,7 +32,7 @@ public final class FragmentAddReviewBinding implements ViewBinding {
   public final Button buttonSubmitReview;
 
   @NonNull
-  public final EditText editTextName;
+  public final CheckBox checkBoxAnonymous;
 
   @NonNull
   public final EditText editTextReview;
@@ -45,6 +47,9 @@ public final class FragmentAddReviewBinding implements ViewBinding {
   public final RatingBar ratingBar;
 
   @NonNull
+  public final TextView textViewNameValue;
+
+  @NonNull
   public final TextView textViewYourName;
 
   @NonNull
@@ -56,29 +61,36 @@ public final class FragmentAddReviewBinding implements ViewBinding {
   @NonNull
   public final TextView textViewYourTittle;
 
-  private FragmentAddReviewBinding(@NonNull ScrollView rootView, @NonNull Button buttonChoosePhoto,
-      @NonNull Button buttonSubmitReview, @NonNull EditText editTextName,
-      @NonNull EditText editTextReview, @NonNull EditText editTextReviewTitle,
-      @NonNull LinearLayout imagesContainer, @NonNull RatingBar ratingBar,
+  @NonNull
+  public final Toolbar toolbar;
+
+  private FragmentAddReviewBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull Button buttonChoosePhoto, @NonNull Button buttonSubmitReview,
+      @NonNull CheckBox checkBoxAnonymous, @NonNull EditText editTextReview,
+      @NonNull EditText editTextReviewTitle, @NonNull LinearLayout imagesContainer,
+      @NonNull RatingBar ratingBar, @NonNull TextView textViewNameValue,
       @NonNull TextView textViewYourName, @NonNull TextView textViewYourRating,
-      @NonNull TextView textViewYourReview, @NonNull TextView textViewYourTittle) {
+      @NonNull TextView textViewYourReview, @NonNull TextView textViewYourTittle,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.buttonChoosePhoto = buttonChoosePhoto;
     this.buttonSubmitReview = buttonSubmitReview;
-    this.editTextName = editTextName;
+    this.checkBoxAnonymous = checkBoxAnonymous;
     this.editTextReview = editTextReview;
     this.editTextReviewTitle = editTextReviewTitle;
     this.imagesContainer = imagesContainer;
     this.ratingBar = ratingBar;
+    this.textViewNameValue = textViewNameValue;
     this.textViewYourName = textViewYourName;
     this.textViewYourRating = textViewYourRating;
     this.textViewYourReview = textViewYourReview;
     this.textViewYourTittle = textViewYourTittle;
+    this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -115,9 +127,9 @@ public final class FragmentAddReviewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.edit_text_name;
-      EditText editTextName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextName == null) {
+      id = R.id.checkBox_anonymous;
+      CheckBox checkBoxAnonymous = ViewBindings.findChildViewById(rootView, id);
+      if (checkBoxAnonymous == null) {
         break missingId;
       }
 
@@ -145,6 +157,12 @@ public final class FragmentAddReviewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_view_name_value;
+      TextView textViewNameValue = ViewBindings.findChildViewById(rootView, id);
+      if (textViewNameValue == null) {
+        break missingId;
+      }
+
       id = R.id.text_view_your_name;
       TextView textViewYourName = ViewBindings.findChildViewById(rootView, id);
       if (textViewYourName == null) {
@@ -169,9 +187,16 @@ public final class FragmentAddReviewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAddReviewBinding((ScrollView) rootView, buttonChoosePhoto,
-          buttonSubmitReview, editTextName, editTextReview, editTextReviewTitle, imagesContainer,
-          ratingBar, textViewYourName, textViewYourRating, textViewYourReview, textViewYourTittle);
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentAddReviewBinding((CoordinatorLayout) rootView, buttonChoosePhoto,
+          buttonSubmitReview, checkBoxAnonymous, editTextReview, editTextReviewTitle,
+          imagesContainer, ratingBar, textViewNameValue, textViewYourName, textViewYourRating,
+          textViewYourReview, textViewYourTittle, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

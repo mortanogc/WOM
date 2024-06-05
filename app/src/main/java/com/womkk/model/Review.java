@@ -3,33 +3,81 @@ package com.womkk.model;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
+import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class Review {
+public class Review implements Serializable {
+    private String reviewId;
+    private String userId;
     private String authorName;
-    private Date reviewDate;
     private float rating;
-    private List<String> photos;
     private String title;
     private String reviewText;
+    private List<String> photos;
+    private Date reviewDate;
+    private boolean approved;
 
-    public Review(String authorName, float rating, String title, String reviewText, ArrayList<Bitmap> reviewImages) {
+    // Пустой конструктор для Firestore
+    public Review() {}
+
+    public Review(String reviewId, String userId, String authorName, float rating, String title, String reviewText, List<String> photos, boolean approved) {
+        this.reviewId = reviewId;
+        this.userId = userId;
         this.authorName = authorName;
-        this.reviewDate = new Date(); // Устанавливает текущую дату и время
         this.rating = rating;
         this.title = title;
         this.reviewText = reviewText;
-        this.photos = new ArrayList<>();
-        for (Bitmap image : reviewImages) {
-            this.photos.add(bitmapToBase64(image));
-        }
+        this.photos = photos;
+        this.reviewDate = new Date(); // Устанавливает текущую дату и время
+        this.approved = approved;
     }
 
-    private String bitmapToBase64(Bitmap bitmap) {
+    // Геттеры и сеттеры
+    public String getReviewId() {
+        return reviewId;
+    }
+
+    public void setReviewId(String reviewId) {
+        this.reviewId = reviewId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public float getRating() {
+        return rating;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getReviewText() {
+        return reviewText;
+    }
+
+    public List<String> getPhotos() {
+        return photos;
+    }
+
+    public Date getReviewDate() {
+        return reviewDate;
+    }
+
+    public boolean isApproved() {
+        return approved;
+    }
+
+    public static String bitmapToBase64(Bitmap bitmap) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 80, byteArrayOutputStream);
         byte[] byteArray = byteArrayOutputStream.toByteArray();
@@ -41,51 +89,19 @@ public class Review {
         return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
     }
 
-    public String getAuthorName() {
-        return authorName;
-    }
-
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
-    }
-
-    public Date getReviewDate() {
-        return reviewDate;
-    }
-
-    public void setReviewDate(Date reviewDate) {
-        this.reviewDate = reviewDate;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
-    public List<String> getPhotos() {
-        return photos;
-    }
-
-    public void setPhotos(List<String> photos) {
-        this.photos = photos;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getReviewText() {
-        return reviewText;
-    }
-
-    public void setReviewText(String reviewText) {
-        this.reviewText = reviewText;
+    @Override
+    public String toString() {
+        return "Review{" +
+                "reviewId='" + reviewId + '\'' +
+                ", userId='" + userId + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", rating=" + rating +
+                ", title='" + title + '\'' +
+                ", reviewText='" + reviewText + '\'' +
+                ", photos=" + photos +
+                ", reviewDate=" + reviewDate +
+                ", approved=" + approved +
+                '}';
     }
 }
+
