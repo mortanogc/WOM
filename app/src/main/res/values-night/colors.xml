@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green_primary">#607D3B</color>
-    <color name="green_primary_bottom">@color/green_dark</color>
-    <color name="green_dark">#30401D</color>
-    <color name="green_light">#B0B986</color>
+    <color name="green_primary">#005383</color>
+    <color name="green_primary_bottom">#00324f</color>
+    <color name="green_dark">#005383</color>
+    <color name="green_light">#a1b0c5</color>
     <color name="orange_primary">#FFA500</color>
     <color name="orange_dark">@color/orange_light</color>
     <color name="orange_light">#FFC04C</color>
@@ -15,7 +15,7 @@
 
     <!-- Bottom Navigation -->
     <color name="colorPrimary">@color/orange_primary</color>
-    <color name="colorOnSurface">@color/green_primary</color>
+    <color name="colorOnSurface">@color/green_light</color>
 
-    <color name="cardBackgroundColor">#393E2D</color>
+    <color name="cardBackgroundColor">#001928</color>
 </resources>

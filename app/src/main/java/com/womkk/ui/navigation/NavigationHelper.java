@@ -32,7 +32,7 @@ public class NavigationHelper {
             Manifest.permission.INTERNET,
             Manifest.permission.ACCESS_FINE_LOCATION,
     };
-    private static final String MAPKIT_API_KEY = "d0c42135-50be-4de5-8cff-1429297cad25";
+    private static final String MAPKIT_API_KEY = "";
 
     static {
         MapKitFactory.setApiKey(MAPKIT_API_KEY);

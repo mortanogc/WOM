@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/green_dark"
         android:text="@string/nav_settings"
         android:textColor="@android:color/white"
         android:textSize="20sp"
